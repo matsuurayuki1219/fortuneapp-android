@@ -1,0 +1,54 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--ログイン画面-->
+    <!--メインレイアウトのpadding-->
+    <dimen name="padding">15dp</dimen>
+    <!--ログイン画面のViewのマージン-->
+    <dimen name="loginScreenMargin">40dp</dimen>
+    <!--EditTextの左右のマージン-->
+    <dimen name="editMargin">20dp</dimen>
+    <!--Buttonの左右のマージン-->
+    <dimen name="buttonMargin">50dp</dimen>
+    <!--EditTextの左のイラストと入力文字とのマージン-->
+    <dimen name="drawablePadding">20dp</dimen>
+    <!--EditTextの高さ-->
+    <dimen name="editHeight">40dp</dimen>
+    <!--Buttonの高さ-->
+    <dimen name="buttonHeight">50dp</dimen>
+    <!--タイトルの文字の大きさ-->
+    <dimen name="titleSize">20sp</dimen>
+    <!--エラーメッセージのの大きさ-->
+    <dimen name="errorMessageSize">16sp</dimen>
+    <!--ボタンの文字の大きさ-->
+    <dimen name="buttonSize">18sp</dimen>
+    <!--選択ボタンの角丸の半径-->
+    <dimen name="radius">25dp</dimen>
+    <!--ボタンの角丸の半径-->
+    <dimen name="radius1">15dp</dimen>
+
+    <!--ホーム画面-->
+    <!--ボタンの枠線の太さ-->
+    <dimen name="buttonStroke">4dp</dimen>
+    <!--ImageViewとTextViewのマージン-->
+    <dimen name="marginButtom">10dp</dimen>
+    <!--タイトルのマージン-->
+    <dimen name="textMargin">30dp</dimen>
+    <!--メインレイアウトの下のマージン-->
+    <dimen name="bottomMargin">30dp</dimen>
+    <!--選択ボタンの高さ-->
+    <dimen name="sixButtonHeight">70dp</dimen>
+    <!--サブタイトルの文字の大きさ-->
+    <dimen name="subTitleSize">18sp</dimen>
+    <!--NumberPickerの文字の大きさ-->
+    <dimen name="numberPickerSize">16sp</dimen>
+    <!--NumberPickerのマージン-->
+    <dimen name="numberPickerMargin">10dp</dimen>
+
+    <!--C-->
+    <!--コンテンツの文字サイズ-->
+    <dimen name="contentSize">16sp</dimen>
+    <!--コンテンツのマージン-->
+    <dimen name="contentMargin">20dp</dimen>
+
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fortuneapp">
+    <!-- インターネット通信許可 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".B.AppB03Activity"></activity>
+        <activity android:name=".B.AppB02Activity" />
+        <activity android:name=".B.AppB01Activity" />
+        <activity android:name=".D.AppD01Activity" />
+        <activity android:name=".C.AppC03Activity" />
+        <activity android:name=".A.AppA02Activity" />
+        <activity android:name=".A.AppA01Activity" />
+        <activity android:name=".C.AppC02Activity" />
+        <activity android:name=".C.AppC01Activity" />
+        <activity android:name=".HomeActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

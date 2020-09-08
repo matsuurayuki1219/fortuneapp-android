@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baseColor"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_action_account"
+        android:layout_marginTop="70dp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/loginScreenMargin"
+        android:gravity="center"
+        android:text="MEMBER LOGIN"
+        android:textColor="@color/white"
+        android:textSize="@dimen/titleSize" />
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/editHeight"
+        android:layout_marginLeft="@dimen/editMargin"
+        android:layout_marginTop="@dimen/loginScreenMargin"
+        android:layout_marginRight="@dimen/editMargin"
+        android:background="@drawable/view_rounded"
+        android:drawableLeft="@drawable/ic_action_lock"
+        android:drawablePadding="20dp"
+        android:paddingLeft="10dp"
+        android:inputType="textPassword"
+        android:hint="password"
+        android:maxLength="6"
+        android:textColor="@color/baseColor" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttonHeight"
+        android:layout_marginLeft="@dimen/buttonMargin"
+        android:layout_marginTop="@dimen/loginScreenMargin"
+        android:layout_marginRight="@dimen/buttonMargin"
+        android:background="@drawable/view_rounded"
+        android:text="LOG IN"
+        android:textSize="@dimen/buttonSize"
+        android:textColor="@color/baseColor"/>
+
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/loginScreenMargin"
+        android:gravity="center"
+        android:textColor="@color/error"
+        android:textSize="@dimen/errorMessageSize"
+        android:text="errorC"
+        android:visibility="invisible"/>
+
+
+
+</LinearLayout>

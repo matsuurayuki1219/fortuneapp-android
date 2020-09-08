@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/baseColor"
+    android:paddingLeft="@dimen/padding"
+    android:paddingBottom="@dimen/marginButtom"
+    android:paddingRight="@dimen/padding"
+    tools:context=".D.AppD01Activity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="今日の運勢を占います"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/textMargin"
+        android:textSize="@dimen/titleSize" />
+
+    <com.example.fortuneapp.CustomView.MyRouletteView
+        android:id="@+id/roulette"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
