@@ -17,7 +17,7 @@
         android:layout_marginBottom="@dimen/textMargin"
         android:gravity="center"
         android:text="@string/Ctitle"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="@dimen/titleSize" />
 
     <TextView
@@ -27,7 +27,7 @@
         android:layout_marginBottom="@dimen/textMargin"
         android:gravity="center"
         android:text="@string/Csubtitle"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="@dimen/subTitleSize" />
 
     <!-- hour picker -->
@@ -49,11 +49,11 @@
                 android:layout_height="wrap_content"
                 android:text="月"
                 android:textSize="@dimen/numberPickerSize"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:gravity="center"/>
 
 
-            <com.example.fortuneapp.CustomView.MyNumberPicker
+            <jp.matsuura.fortuneapp.MyCustomView.MyNumberPicker
                 android:id="@+id/monthPicker"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -73,10 +73,10 @@
                 android:layout_height="wrap_content"
                 android:text="日"
                 android:textSize="@dimen/numberPickerSize"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:gravity="center"/>
 
-            <com.example.fortuneapp.CustomView.MyNumberPicker
+            <jp.matsuura.fortuneapp.MyCustomView.MyNumberPicker
                 android:id="@+id/dayPicker"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -113,7 +113,7 @@
             android:layout_gravity="bottom"
             android:layout_marginLeft="@dimen/buttonMargin"
             android:layout_marginRight="@dimen/buttonMargin"
-            android:background="@drawable/button_rounded_water"
+            android:background="@drawable/button_rounded_subcolor"
             android:gravity="center|center_horizontal"
             android:text="診断"
             android:textColor="@color/white"

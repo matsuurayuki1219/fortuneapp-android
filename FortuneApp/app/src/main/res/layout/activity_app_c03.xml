@@ -5,195 +5,237 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/baseColor"
+    android:orientation="vertical"
     android:paddingLeft="@dimen/padding"
     android:paddingRight="@dimen/padding"
-    android:orientation="vertical"
+    android:paddingBottom="@dimen/bottomMargin"
     tools:context=".C.AppC03Activity">
 
-    <TextView
-        android:id="@+id/title"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="@dimen/textMargin"
-        android:layout_marginBottom="@dimen/textMargin"
-        android:gravity="center"
-        android:text="あなたの明日の運勢を占いました"
-        android:textColor="@color/white"
-        android:textSize="@dimen/titleSize" />
+        android:layout_height="match_parent">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scrollbars="none"
-        android:paddingBottom="@dimen/bottomMargin">
+
+        <jp.matsuura.fortuneapp.MyCustomView.MyCircleView
+            android:id="@+id/circle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="診断中"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/contentTitle"
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/textMargin"
+                android:layout_marginBottom="@dimen/textMargin"
+                android:gravity="center"
+                android:text="あなたの明日の運勢を占いました"
+                android:textColor="@color/black"
+                android:textSize="@dimen/titleSize" />
+
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/contentMargin"
+                android:layout_weight="1"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/contentTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="今日のあなたは・・・"
+                        android:textColor="@color/buttonRed"
+                        android:textSize="@dimen/subTitleSize" />
+
+                    <TextView
+                        android:id="@+id/content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/contentSize" />
+
+                    <TextView
+                        android:id="@+id/itemTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/contentMargin"
+                        android:gravity="left"
+                        android:text="ラッキーアイテム"
+                        android:textColor="@color/buttonRed"
+                        android:textSize="@dimen/subTitleSize" />
+
+                    <TextView
+                        android:id="@+id/item"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/contentSize" />
+
+                    <TextView
+                        android:id="@+id/moneyTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/contentMargin"
+                        android:gravity="left"
+                        android:text="金運"
+                        android:textColor="@color/buttonRed"
+                        android:textSize="@dimen/subTitleSize" />
+
+                    <TextView
+                        android:id="@+id/money"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/contentSize" />
+
+
+                    <TextView
+                        android:id="@+id/totalTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/contentMargin"
+                        android:gravity="left"
+                        android:text="総合運"
+                        android:textColor="@color/buttonRed"
+                        android:textSize="@dimen/subTitleSize" />
+
+                    <TextView
+                        android:id="@+id/total"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/contentSize" />
+
+                    <TextView
+                        android:id="@+id/colorTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/contentMargin"
+                        android:gravity="left"
+                        android:text="ラッキーカラー"
+                        android:textColor="@color/buttonRed"
+                        android:textSize="@dimen/subTitleSize" />
+
+                    <TextView
+                        android:id="@+id/color"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/contentSize" />
+
+
+                    <TextView
+                        android:id="@+id/jobTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/contentMargin"
+                        android:gravity="left"
+                        android:text="仕事運"
+                        android:textColor="@color/buttonRed"
+                        android:textSize="@dimen/subTitleSize" />
+
+                    <TextView
+                        android:id="@+id/job"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/contentSize" />
+
+
+                    <TextView
+                        android:id="@+id/loveTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/contentMargin"
+                        android:gravity="left"
+                        android:text="恋愛運"
+                        android:textColor="@color/buttonRed"
+                        android:textSize="@dimen/subTitleSize" />
+
+                    <TextView
+                        android:id="@+id/love"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/contentSize" />
+
+
+
+                    <TextView
+                        android:id="@+id/rankTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/contentMargin"
+                        android:gravity="left"
+                        android:text="星座別ランキング"
+                        android:textColor="@color/buttonRed"
+                        android:textSize="@dimen/subTitleSize" />
+
+                    <TextView
+                        android:id="@+id/rank"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/contentSize" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="left"
-                android:text="明日のあなたは・・・"
-                android:textColor="@color/white"
-                android:textSize="@dimen/subTitleSize" />
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/content"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="left"
-                android:textColor="@color/white"
-                android:textSize="@dimen/contentSize" />
+                <Button
+                    android:id="@+id/homeButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/buttonHeight"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="@dimen/buttonMargin"
+                    android:layout_marginTop="@dimen/contentMargin"
+                    android:layout_marginRight="@dimen/buttonMargin"
+                    android:background="@drawable/button_rounded_subcolor"
+                    android:gravity="center|center_horizontal"
+                    android:text="ホーム画面に戻る"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/buttonSize" />
 
-            <TextView
-                android:id="@+id/itemTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/contentMargin"
-                android:gravity="left"
-                android:text="ラッキーアイテム"
-                android:textColor="@color/buttonRed"
-                android:textSize="@dimen/subTitleSize" />
-
-            <TextView
-                android:id="@+id/item"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="left"
-                android:textColor="@color/white"
-                android:textSize="@dimen/contentSize" />
-
-            <TextView
-                android:id="@+id/moneyTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/contentMargin"
-                android:gravity="left"
-                android:text="金運"
-                android:textColor="@color/buttonYellow"
-                android:textSize="@dimen/subTitleSize" />
-
-            <TextView
-                android:id="@+id/money"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="left"
-                android:textColor="@color/white"
-                android:textSize="@dimen/contentSize" />
-
-
-            <TextView
-                android:id="@+id/totalTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/contentMargin"
-                android:gravity="left"
-                android:text="総合運"
-                android:textColor="@color/buttonWater"
-                android:textSize="@dimen/subTitleSize" />
-
-            <TextView
-                android:id="@+id/total"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="left"
-                android:textColor="@color/white"
-                android:textSize="@dimen/contentSize" />
-
-            <TextView
-                android:id="@+id/colorTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/contentMargin"
-                android:gravity="left"
-                android:text="ラッキーカラー"
-                android:textColor="@color/buttonGreen"
-                android:textSize="@dimen/subTitleSize" />
-
-            <TextView
-                android:id="@+id/color"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="left"
-                android:textColor="@color/white"
-                android:textSize="@dimen/contentSize" />
-
-
-            <TextView
-                android:id="@+id/jobTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/contentMargin"
-                android:gravity="left"
-                android:text="仕事運"
-                android:textColor="@color/buttonOrange"
-                android:textSize="@dimen/subTitleSize" />
-
-            <TextView
-                android:id="@+id/job"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="left"
-                android:textColor="@color/white"
-                android:textSize="@dimen/contentSize" />
-
-
-            <TextView
-                android:id="@+id/loveTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/contentMargin"
-                android:gravity="left"
-                android:text="恋愛運"
-                android:textColor="@color/buttonPink"
-                android:textSize="@dimen/subTitleSize" />
-
-            <TextView
-                android:id="@+id/love"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="left"
-                android:textColor="@color/white"
-                android:textSize="@dimen/contentSize" />
-
-            <TextView
-                android:id="@+id/rankTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/contentMargin"
-                android:gravity="left"
-                android:text="星座別ランキング"
-                android:textColor="@color/white"
-                android:textSize="@dimen/subTitleSize" />
-
-            <TextView
-                android:id="@+id/rank"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="left"
-                android:textColor="@color/white"
-                android:textSize="@dimen/contentSize" />
-
-            <Button
-                android:id="@+id/homeButton"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/buttonHeight"
-                android:layout_marginTop="@dimen/contentMargin"
-                android:layout_gravity="bottom"
-                android:layout_marginLeft="@dimen/buttonMargin"
-                android:layout_marginRight="@dimen/buttonMargin"
-                android:background="@drawable/button_rounded_water"
-                android:gravity="center|center_horizontal"
-                android:text="ホーム画面に戻る"
-                android:textColor="@color/white"
-                android:textSize="@dimen/buttonSize" />
+            </LinearLayout>
 
         </LinearLayout>
 
-    </ScrollView>
+    </FrameLayout>
 
 </LinearLayout>

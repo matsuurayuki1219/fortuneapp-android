@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/mainLayout"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/baseColor"
@@ -9,62 +9,121 @@
     tools:context=".LoginActivity">
 
 
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center_horizontal"
-        android:src="@drawable/ic_action_account"
-        android:layout_marginTop="70dp"/>
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/loginScreenMargin"
-        android:gravity="center"
-        android:text="MEMBER LOGIN"
-        android:textColor="@color/white"
-        android:textSize="@dimen/titleSize" />
+        <FrameLayout
+            android:id="@+id/mainFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="70dp"
+                    android:src="@drawable/ic_action_account" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/loginScreenMargin"
+                    android:gravity="center"
+                    android:text="MEMBER LOGIN"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/titleSize" />
 
 
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/editHeight"
-        android:layout_marginLeft="@dimen/editMargin"
-        android:layout_marginTop="@dimen/loginScreenMargin"
-        android:layout_marginRight="@dimen/editMargin"
-        android:background="@drawable/view_rounded"
-        android:drawableLeft="@drawable/ic_action_lock"
-        android:drawablePadding="20dp"
-        android:paddingLeft="10dp"
-        android:inputType="textPassword"
-        android:hint="password"
-        android:maxLength="6"
-        android:textColor="@color/baseColor" />
+                <EditText
+                    android:id="@+id/id"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editHeight"
+                    android:layout_marginLeft="@dimen/editMargin"
+                    android:layout_marginTop="@dimen/loginScreenMargin"
+                    android:layout_marginRight="@dimen/editMargin"
+                    android:background="@drawable/view_rounded_white"
+                    android:drawableLeft="@drawable/ic_action_mail"
+                    android:drawablePadding="20dp"
+                    android:hint="email"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/baseColor" />
 
-    <Button
-        android:id="@+id/loginButton"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/buttonHeight"
-        android:layout_marginLeft="@dimen/buttonMargin"
-        android:layout_marginTop="@dimen/loginScreenMargin"
-        android:layout_marginRight="@dimen/buttonMargin"
-        android:background="@drawable/view_rounded"
-        android:text="LOG IN"
-        android:textSize="@dimen/buttonSize"
-        android:textColor="@color/baseColor"/>
 
-    <TextView
-        android:id="@+id/errorMessage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/loginScreenMargin"
-        android:gravity="center"
-        android:textColor="@color/error"
-        android:textSize="@dimen/errorMessageSize"
-        android:text="errorC"
-        android:visibility="invisible"/>
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editHeight"
+                    android:layout_marginLeft="@dimen/editMargin"
+                    android:layout_marginTop="@dimen/loginScreenMargin"
+                    android:layout_marginRight="@dimen/editMargin"
+                    android:background="@drawable/view_rounded_white"
+                    android:drawableLeft="@drawable/ic_action_lock"
+                    android:drawablePadding="20dp"
+                    android:hint="password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/baseColor" />
+
+                <Button
+                    android:id="@+id/loginButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/buttonHeight"
+                    android:layout_marginLeft="@dimen/buttonMargin"
+                    android:layout_marginTop="@dimen/loginScreenMargin"
+                    android:layout_marginRight="@dimen/buttonMargin"
+                    android:background="@drawable/view_rounded_white"
+                    android:text="LOG IN"
+                    android:textColor="@color/baseColor"
+                    android:textSize="@dimen/buttonSize" />
+
+                <TextView
+                    android:id="@+id/createAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/loginScreenMargin"
+                    android:gravity="center"
+                    android:text="@string/createAccount"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/errorMessageSize" />
+
+                <TextView
+                    android:id="@+id/toHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/loginScreenMargin"
+                    android:gravity="center"
+                    android:text="@string/toHome"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/errorMessageSize" />
+
+
+                <TextView
+                    android:id="@+id/errorMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/loginScreenMargin"
+                    android:gravity="center"
+                    android:text="errorC"
+                    android:textColor="@color/error"
+                    android:textSize="@dimen/errorMessageSize"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center" />
+
+
+        </FrameLayout>
 
 
 

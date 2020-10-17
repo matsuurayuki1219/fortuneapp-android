@@ -27,9 +27,13 @@
     <!--ボタンの角丸の半径-->
     <dimen name="radius1">15dp</dimen>
 
+    <!--説明画面-->
+    <dimen name="subTitle">20sp</dimen>
+
+
     <!--ホーム画面-->
     <!--ボタンの枠線の太さ-->
-    <dimen name="buttonStroke">4dp</dimen>
+    <dimen name="buttonStroke">2dp</dimen>
     <!--ImageViewとTextViewのマージン-->
     <dimen name="marginButtom">10dp</dimen>
     <!--タイトルのマージン-->
@@ -37,13 +41,24 @@
     <!--メインレイアウトの下のマージン-->
     <dimen name="bottomMargin">30dp</dimen>
     <!--選択ボタンの高さ-->
-    <dimen name="sixButtonHeight">70dp</dimen>
+    <dimen name="sixButtonHeight">100dp</dimen>
     <!--サブタイトルの文字の大きさ-->
     <dimen name="subTitleSize">18sp</dimen>
     <!--NumberPickerの文字の大きさ-->
     <dimen name="numberPickerSize">16sp</dimen>
     <!--NumberPickerのマージン-->
     <dimen name="numberPickerMargin">10dp</dimen>
+
+    <dimen name="buttonPadding">10dp</dimen>
+    <dimen name="buttonBottomMargin">20dp</dimen>
+    <dimen name="imageViewSize">80dp</dimen>
+    <dimen name="buttonTitle">20sp</dimen>
+    <dimen name="commentSize">14dp</dimen>
+    <dimen name="titleAndCommentMargin">5dp</dimen>
+    <dimen name="imageViewRightMargin">10dp</dimen>
+
+    <dimen name="selectButtonHeight">100dp</dimen>
+
 
     <!--C-->
     <!--コンテンツの文字サイズ-->

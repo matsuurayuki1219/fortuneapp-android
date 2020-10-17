@@ -7,13 +7,31 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-
-
     <!--ログイン画面-->
     <string name="errorMessage1">パスワードを入力してください。</string>
     <string name="errorMessage2">パスワードが違います。</string>
+    <string name="createAccount"><u>新規アカウント作成はこちら</u></string>
+    <string name="toHome"><u> アカウント登録をしない</u></string>
+
+
+    <!--説明画面-->
+    <string name="title1">6種類の占いコンテンツの用意</string>
+    <string name="message1">本アプリでは6種類の豊富なコンテンツを用意しております。ぜひお試しください。</string>
+    <string name="title2">本人占い</string>
+    <string name="message2">自分の生年月日を入力し、ソウルナンバーを算出します。ソウルナンバーとは運命数と呼ばれ、ソウルナンバーによって特徴が異なります。</string>
+    <string name="title3">相性占い</string>
+    <string name="message3">自分と相手の生年月日を入力し、お互いのソウルナンバーを算出します。2人のソウルナンバーから相性を算出します。</string>
+    <string name="title4">星座占い</string>
+    <string name="message4">自分の誕生日を入力し、今日と明日の運勢を占います。占い結果は占い鑑定士によるものです。ぜひお試しください。</string>
+    <string name="title5">おみくじ</string>
+    <string name="message5">ルーレットを回し、今日の運勢を占います。大吉、中吉、小吉、末吉、凶、大凶の6つを用意しております。</string>
+    <string name="title6">タロット占い</string>
+    <string name="message6">タロットカードを引き、あなたの性格を占います。現在、作成中のため、コンテンツの提供までしばしお待ちください。</string>
+    <string name="title7">リンク集</string>
+    <string name="message7">占いにAPIに関する参考ページです。もし自分で占いコンテンツを作成したい場合は、ご覧ください。</string>
+    <string name="title8">隠しコマンド</string>
+    <string name="message8">タロット占いのページで、～をするとイベントが発生します。ぜひお試しください。</string>
+
     <!--ホーム画面-->
     <!--項目-->
     <string name="button1">本人占い</string>
@@ -22,6 +40,23 @@
     <string name="button4">おみくじ</string>
     <string name="button5">タロット占い</string>
     <string name="button6">リンク集</string>
+    <string name="button7">シェア</string>
+    <string name="button8">マニュアル</string>
+    <string name="button9">その他</string>
+
+    <string name="comment1">生年月日からソウルナンバーを算出し、あなたの性格を占います。</string>
+    <string name="comment2">２人のソウルナンバーを算出し、２人の相性を占います。</string>
+    <string name="comment3">生年月日から星座を算出し、本日と明日の運勢を占います。</string>
+    <string name="comment4">ルーレットを回し、本日の運勢を占います。</string>
+    <string name="comment5">TO BE CONTINUED</string>
+    <string name="comment6">占いに関するリンク集です。</string>
+    <string name="comment7">Fortune AppをSNSで共有します。</string>
+    <string name="comment8">FortuneAppのマニュアルです。</string>
+    <string name="comment9">その他、サインアウト、アカウント削除などを行います。</string>
+
+    <string name="shareTitle">Fortune Appをお試しください</string>
+    <string name="shareMessage">松浦裕久君が作成したFortuneAppアプリをぜひお試しください。\nhttps://play.google.com/store/apps/details?id=jp.matsuura.fortuneapp</string>
+
 
     <!--A-->
     <!--タイトル-->
@@ -97,5 +132,10 @@
 
     <string name="C02title">あなたの今日の運勢を占いました</string>
 
+    <!--E-->
+    <string name="url1"><u>https://jugem.jp/</u></string>
+    <string name="url2"><u>http://www.tarim.co.jp/</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

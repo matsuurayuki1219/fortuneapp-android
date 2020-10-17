@@ -4,15 +4,15 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.example.fortuneapp",
+  "applicationId": "jp.matsuura.fortuneapp",
   "variantName": "release",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
       "properties": [],
-      "versionCode": 1,
-      "versionName": "1",
+      "versionCode": 4,
+      "versionName": "4",
       "enabled": true,
       "outputFile": "app-release.apk"
     }

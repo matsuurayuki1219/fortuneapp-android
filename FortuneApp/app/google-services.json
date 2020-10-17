@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "350122385961",
+    "firebase_url": "https://fortuneapp-91393.firebaseio.com",
+    "project_id": "fortuneapp-91393",
+    "storage_bucket": "fortuneapp-91393.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350122385961:android:b2276118e0d0663a823238",
+        "android_client_info": {
+          "package_name": "jp.matsuura.fortuneapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "350122385961-h2gnqjicccdl1lr7slfu66v0lm9cgst3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC35DVWrlXBrLGBn8TakYaAuzDiy1jeMuw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "350122385961-h2gnqjicccdl1lr7slfu66v0lm9cgst3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
