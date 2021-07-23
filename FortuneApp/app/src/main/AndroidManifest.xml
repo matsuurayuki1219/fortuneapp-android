@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jp.matsuura.fortuneapp">
+    <!-- インターネット通信許可 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/fortuneapp_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".G.AccountActivity"></activity>
+        <activity android:name=".OtherActivity" />
+        <activity android:name=".CreateAccountActivity" />
+        <activity android:name=".MyFragment.EightFragment" />
+        <activity android:name=".MyFragment.SeventhFragment" />
+        <activity android:name=".MyFragment.SixthFragment" />
+        <activity android:name=".MyFragment.FifthFragment" />
+        <activity android:name=".MyFragment.FourthFragment" />
+        <activity android:name=".IntroductionActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".F.AppF01Activity" />
+        <activity android:name=".E.AppE02Activity" />
+        <activity android:name=".E.AppE01Activity" />
+        <activity android:name=".B.AppB03Activity" />
+        <activity android:name=".B.AppB02Activity" />
+        <activity android:name=".B.AppB01Activity" />
+        <activity android:name=".D.AppD01Activity" />
+        <activity android:name=".C.AppC03Activity" />
+        <activity android:name=".A.AppA02Activity" />
+        <activity android:name=".A.AppA01Activity" />
+        <activity android:name=".C.AppC02Activity" />
+        <activity android:name=".C.AppC01Activity" />
+        <activity android:name=".HomeActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

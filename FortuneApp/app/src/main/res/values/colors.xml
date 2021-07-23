@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!--背景色-->
+<!--    <color name="baseColor">#293C5B</color>-->
+
+    <color name="black">#242424</color>
+    <color name="baseColor">#A982FF</color>
+
+    <color name="gray">#808080</color>
+
+    <color name="subColor">#5c2fbf</color>
+    <!--文字の色-->
+    <color name="white">#ffffff</color>
+    <!--警告メッセージの色-->
+    <color name="error">#990000</color>
+    <!--ボタンの枠の色-->
+    <color name="buttonRed">#990000</color>
+    <color name="buttonGreen">#009900</color>
+    <color name="buttonYellow">#999900</color>
+    <color name="buttonPink">#990099</color>
+    <color name="buttonWater">#029FDD</color>
+    <color name="buttonOrange">#FFA500</color>
+
+
+
+</resources>

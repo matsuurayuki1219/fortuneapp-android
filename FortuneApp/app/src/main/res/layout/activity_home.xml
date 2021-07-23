@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/baseColor"
+    android:paddingTop="@dimen/padding"
+    android:paddingBottom="@dimen/padding"
+    android:paddingLeft="@dimen/padding"
+    android:paddingRight="@dimen/padding"
+    tools:context=".HomeActivity">
+
+
+    <!--Layout Ver3 -START-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--1列目-本人占い-->
+
+            <LinearLayout
+                android:id="@+id/method1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/selectButtonHeight"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/buttonBottomMargin"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/view_rounded"
+                    android:padding="@dimen/buttonPadding"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/imageViewSize"
+                        android:layout_height="@dimen/imageViewSize"
+                        android:src="@drawable/person"
+                        android:layout_marginRight="@dimen/imageViewRightMargin"
+                        android:scaleType="fitXY"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/buttonTitle"
+                            android:text="@string/button1"
+                            android:textColor="@color/black"
+                            android:layout_marginBottom="@dimen/titleAndCommentMargin"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/commentSize"
+                            android:text="@string/comment1"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--2列目-相性占い-->
+
+            <LinearLayout
+                android:id="@+id/method2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/selectButtonHeight"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/buttonBottomMargin"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/view_rounded"
+                    android:padding="@dimen/buttonPadding"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/imageViewSize"
+                        android:layout_height="@dimen/imageViewSize"
+                        android:src="@drawable/people"
+                        android:layout_marginRight="@dimen/imageViewRightMargin"
+                        android:scaleType="fitXY"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/buttonTitle"
+                            android:text="@string/button2"
+                            android:textColor="@color/black"
+                            android:layout_marginBottom="@dimen/titleAndCommentMargin"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/commentSize"
+                            android:text="@string/comment2"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--3列目-星座占い-->
+
+            <LinearLayout
+                android:id="@+id/method3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/selectButtonHeight"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/buttonBottomMargin"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/view_rounded"
+                    android:padding="@dimen/buttonPadding"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/imageViewSize"
+                        android:layout_height="@dimen/imageViewSize"
+                        android:src="@drawable/moon"
+                        android:layout_marginRight="@dimen/imageViewRightMargin"
+                        android:scaleType="fitXY"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/buttonTitle"
+                            android:text="@string/button3"
+                            android:textColor="@color/black"
+                            android:layout_marginBottom="@dimen/titleAndCommentMargin"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/commentSize"
+                            android:text="@string/comment3"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--4列目-おみくじ占い-->
+
+            <LinearLayout
+                android:id="@+id/method4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/selectButtonHeight"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/buttonBottomMargin"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/view_rounded"
+                    android:padding="@dimen/buttonPadding"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/imageViewSize"
+                        android:layout_height="@dimen/imageViewSize"
+                        android:src="@drawable/omikuji"
+                        android:layout_marginRight="@dimen/imageViewRightMargin"
+                        android:scaleType="fitXY"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/buttonTitle"
+                            android:text="@string/button4"
+                            android:textColor="@color/black"
+                            android:layout_marginBottom="@dimen/titleAndCommentMargin"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/commentSize"
+                            android:text="@string/comment4"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--5列目-タロット占い-->
+
+            <LinearLayout
+                android:id="@+id/method5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/selectButtonHeight"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/buttonBottomMargin"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/view_rounded"
+                    android:padding="@dimen/buttonPadding"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/imageViewSize"
+                        android:layout_height="@dimen/imageViewSize"
+                        android:src="@drawable/tarot"
+                        android:layout_marginRight="@dimen/imageViewRightMargin"
+                        android:scaleType="fitXY"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/buttonTitle"
+                            android:text="@string/button5"
+                            android:textColor="@color/black"
+                            android:layout_marginBottom="@dimen/titleAndCommentMargin"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/commentSize"
+                            android:text="@string/comment5"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--6列目-参考-->
+
+            <LinearLayout
+                android:id="@+id/method8"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/selectButtonHeight"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/buttonBottomMargin"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/view_rounded"
+                    android:padding="@dimen/buttonPadding"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/imageViewSize"
+                        android:layout_height="@dimen/imageViewSize"
+                        android:src="@drawable/ic_action_manual"
+                        android:layout_marginRight="@dimen/imageViewRightMargin"
+                        android:scaleType="fitXY"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/buttonTitle"
+                            android:text="@string/button8"
+                            android:textColor="@color/black"
+                            android:layout_marginBottom="@dimen/titleAndCommentMargin"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/commentSize"
+                            android:text="@string/comment8"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--6列目-リンク集-->
+
+            <LinearLayout
+                android:id="@+id/method6"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/selectButtonHeight"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/buttonBottomMargin"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/view_rounded"
+                    android:padding="@dimen/buttonPadding"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/imageViewSize"
+                        android:layout_height="@dimen/imageViewSize"
+                        android:src="@drawable/link"
+                        android:layout_marginRight="@dimen/imageViewRightMargin"
+                        android:scaleType="fitXY"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/buttonTitle"
+                            android:text="@string/button6"
+                            android:textColor="@color/black"
+                            android:layout_marginBottom="@dimen/titleAndCommentMargin"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/commentSize"
+                            android:text="@string/comment6"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--7列目-本人占い-->
+
+            <LinearLayout
+                android:id="@+id/method7"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/selectButtonHeight"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/buttonBottomMargin"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/view_rounded"
+                    android:padding="@dimen/buttonPadding"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/imageViewSize"
+                        android:layout_height="@dimen/imageViewSize"
+                        android:src="@drawable/ic_action_share"
+                        android:layout_marginRight="@dimen/imageViewRightMargin"
+                        android:scaleType="fitXY"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/buttonTitle"
+                            android:text="@string/button7"
+                            android:textColor="@color/black"
+                            android:layout_marginBottom="@dimen/titleAndCommentMargin"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/commentSize"
+                            android:text="@string/comment7"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--6列目-リンク集-->
+
+            <LinearLayout
+                android:id="@+id/method9"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/selectButtonHeight"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/buttonBottomMargin"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/view_rounded"
+                    android:padding="@dimen/buttonPadding"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/imageViewSize"
+                        android:layout_height="@dimen/imageViewSize"
+                        android:src="@drawable/ic_action_settings"
+                        android:layout_marginRight="@dimen/imageViewRightMargin"
+                        android:scaleType="fitXY"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/buttonTitle"
+                            android:text="@string/button9"
+                            android:textColor="@color/black"
+                            android:layout_marginBottom="@dimen/titleAndCommentMargin"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/commentSize"
+                            android:text="@string/comment9"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!--Layout Ver3 -END-->
+
+
+    <!--Layout Ver2 -START-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:orientation="vertical">-->
+
+<!--        &lt;!&ndash;1列目&ndash;&gt;-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            &lt;!&ndash;1つ目のボタン&ndash;&gt;-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_weight="1">-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/buttonRed"-->
+<!--                    android:layout_width="150dp"-->
+<!--                    android:layout_height="150dp"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/subColor"-->
+<!--                    android:gravity="center">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="80dp"-->
+<!--                            android:layout_height="80dp"-->
+<!--                            android:scaleType="fitXY"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:src="@drawable/person"/>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/red"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:gravity="center"-->
+<!--                            android:textSize="20sp"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:text="@string/button1"-->
+<!--                            android:textColor="#242424" />-->
+
+<!--                    </LinearLayout>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+
+
+
+<!--            &lt;!&ndash;2つ目のボタン&ndash;&gt;-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_weight="1">-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/buttonGreen"-->
+<!--                    android:layout_width="150dp"-->
+<!--                    android:layout_height="150dp"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/subColor"-->
+<!--                    android:gravity="center">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="80dp"-->
+<!--                            android:layout_height="80dp"-->
+<!--                            android:scaleType="fitXY"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:src="@drawable/people"/>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/green"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:gravity="center"-->
+<!--                            android:textSize="20sp"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:text="@string/button2"-->
+<!--                            android:textColor="@color/white" />-->
+
+<!--                    </LinearLayout>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+
+<!--        &lt;!&ndash;2列目&ndash;&gt;-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            &lt;!&ndash;3つ目のボタン&ndash;&gt;-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_weight="1">-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/buttonWater"-->
+<!--                    android:layout_width="150dp"-->
+<!--                    android:layout_height="150dp"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/subColor"-->
+<!--                    android:gravity="center">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="80dp"-->
+<!--                            android:layout_height="80dp"-->
+<!--                            android:scaleType="fitXY"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:src="@drawable/moon"/>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/water"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:gravity="center"-->
+<!--                            android:textSize="20sp"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:text="@string/button3"-->
+<!--                            android:textColor="@color/white" />-->
+
+<!--                    </LinearLayout>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+
+<!--            &lt;!&ndash;4つ目のボタン&ndash;&gt;-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/buttonYellow"-->
+<!--                    android:layout_width="150dp"-->
+<!--                    android:layout_height="150dp"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/subColor"-->
+<!--                    android:gravity="center">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="40dp"-->
+<!--                            android:layout_height="80dp"-->
+<!--                            android:scaleType="fitXY"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:src="@drawable/omikuji"/>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/yellow"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:gravity="center"-->
+<!--                            android:textSize="20sp"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:text="@string/button4"-->
+<!--                            android:textColor="@color/white" />-->
+
+<!--                    </LinearLayout>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+
+
+<!--        &lt;!&ndash;3列目&ndash;&gt;-->
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            &lt;!&ndash;5つ目のボタン&ndash;&gt;-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_weight="1">-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/buttonPink"-->
+<!--                    android:layout_width="150dp"-->
+<!--                    android:layout_height="150dp"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/subColor"-->
+<!--                    android:gravity="center">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="80dp"-->
+<!--                            android:layout_height="80dp"-->
+<!--                            android:scaleType="fitXY"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:src="@drawable/tarot"/>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/pink"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:gravity="center"-->
+<!--                            android:textSize="20sp"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:text="@string/button5"-->
+<!--                            android:textColor="@color/white" />-->
+
+<!--                    </LinearLayout>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+
+<!--            &lt;!&ndash;6つ目のボタン&ndash;&gt;-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/buttonOrange"-->
+<!--                    android:layout_width="150dp"-->
+<!--                    android:layout_height="150dp"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/subColor"-->
+<!--                    android:gravity="center">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="80dp"-->
+<!--                            android:layout_height="80dp"-->
+<!--                            android:scaleType="fitXY"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:src="@drawable/link"/>-->
+
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/orange"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:gravity="center"-->
+<!--                            android:textSize="20sp"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:text="@string/button6"-->
+<!--                            android:textColor="@color/white" />-->
+
+<!--                    </LinearLayout>-->
+
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+
+
+<!--    </LinearLayout>-->
+
+
+
+    <!--Layout Ver2- END-->
+
+    <!--Layout Ver1- START-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/title"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="自分の占いをしてみましょう"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:layout_marginTop="@dimen/textMargin"-->
+    <!--        android:layout_marginBottom="@dimen/textMargin"-->
+    <!--        android:textSize="@dimen/titleSize" />-->
+
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:scrollbars="none">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:orientation="vertical"-->
+    <!--            android:layout_marginBottom="@dimen/bottomMargin">-->
+
+    <!--            <LinearLayout-->
+    <!--                android:id="@+id/buttonRed"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="@dimen/sixButtonHeight"-->
+    <!--                android:layout_marginBottom="@dimen/bottomMargin"-->
+    <!--                android:background="@drawable/view_rounded_red"-->
+    <!--                android:gravity="center"-->
+    <!--                android:orientation="vertical">-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/red"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:layout_gravity="center"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:text="@string/button1"-->
+    <!--                    android:textColor="@color/white"-->
+    <!--                    android:textSize="20sp" />-->
+
+    <!--            </LinearLayout>-->
+
+    <!--            <LinearLayout-->
+    <!--                android:id="@+id/buttonGreen"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="@dimen/sixButtonHeight"-->
+    <!--                android:orientation="vertical"-->
+    <!--                android:background="@drawable/view_rounded_green"-->
+    <!--                android:gravity="center"-->
+    <!--                android:layout_marginBottom="@dimen/bottomMargin">-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/green"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:layout_gravity="center"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:textSize="20sp"-->
+    <!--                    android:text="@string/button2"-->
+    <!--                    android:textColor="@color/white" />-->
+
+    <!--            </LinearLayout>-->
+
+    <!--            <LinearLayout-->
+    <!--                android:id="@+id/buttonWater"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="@dimen/sixButtonHeight"-->
+    <!--                android:layout_marginBottom="@dimen/bottomMargin"-->
+    <!--                android:background="@drawable/view_rounded_water"-->
+    <!--                android:gravity="center"-->
+    <!--                android:orientation="vertical">-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/orange"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:layout_gravity="center"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:text="@string/button3"-->
+    <!--                    android:textColor="@color/white"-->
+    <!--                    android:textSize="20sp" />-->
+
+    <!--            </LinearLayout>-->
+
+    <!--            <LinearLayout-->
+    <!--                android:id="@+id/buttonYellow"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="@dimen/sixButtonHeight"-->
+    <!--                android:layout_marginBottom="@dimen/bottomMargin"-->
+    <!--                android:background="@drawable/view_rounded_yellow"-->
+    <!--                android:gravity="center"-->
+    <!--                android:orientation="vertical">-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/yellow"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:layout_gravity="center"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:text="@string/button4"-->
+    <!--                    android:textColor="@color/white"-->
+    <!--                    android:textSize="20sp" />-->
+
+    <!--            </LinearLayout>-->
+
+    <!--&lt;!&ndash;            <LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_height="@dimen/sixButtonHeight"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:orientation="vertical"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:background="@drawable/view_rounded_pink"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_marginBottom="@dimen/bottomMargin">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;                <TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:id="@+id/water"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:layout_gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:textSize="20sp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:text="@string/button5"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:textColor="@color/white" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;            </LinearLayout>&ndash;&gt;-->
+
+    <!--            <LinearLayout-->
+    <!--                android:id="@+id/buttonOrange"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="@dimen/sixButtonHeight"-->
+    <!--                android:layout_marginBottom="@dimen/bottomMargin"-->
+    <!--                android:background="@drawable/view_rounded_orange"-->
+    <!--                android:gravity="center"-->
+    <!--                android:orientation="vertical">-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/pink"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:layout_gravity="center"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:text="@string/button6"-->
+    <!--                    android:textColor="@color/white"-->
+    <!--                    android:textSize="20sp" />-->
+
+    <!--            </LinearLayout>-->
+
+    <!--        </LinearLayout>-->
+
+    <!--    </ScrollView>-->
+
+
+    <!--Layout Ver1- END-->
+
+
+    <!--Layout Ver2- START-->
+
+</LinearLayout>

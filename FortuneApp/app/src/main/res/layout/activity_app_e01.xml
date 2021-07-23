@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baseColor"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/padding"
+    android:paddingRight="@dimen/padding"
+    android:paddingBottom="@dimen/marginButtom"
+    tools:context=".E.AppE01Activity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/textMargin"
+        android:gravity="center"
+        android:text="参考リンク集をご覧ください"
+        android:textColor="@color/black"
+        android:textSize="@dimen/titleSize" />
+
+
+    <TextView
+        android:id="@+id/urlTitle1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/textMargin"
+        android:gravity="left"
+        android:text="自分だけのこだわりブログ"
+        android:textColor="@color/buttonRed"
+        android:textSize="@dimen/contentSize" />
+
+    <TextView
+        android:id="@+id/url1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:text="@string/url1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/contentSize" />
+
+    <TextView
+        android:id="@+id/urlTitle2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/textMargin"
+        android:gravity="left"
+        android:text="原宿占い 塔里木"
+        android:textColor="@color/buttonRed"
+        android:textSize="@dimen/contentSize" />
+
+    <TextView
+        android:id="@+id/url2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:text="@string/url2"
+        android:textColor="@color/black"
+        android:textSize="@dimen/contentSize" />
+
+
+</LinearLayout>

@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">FortuneApp</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <!--ログイン画面-->
+    <string name="errorMessage1">パスワードを入力してください。</string>
+    <string name="errorMessage2">パスワードが違います。</string>
+    <string name="createAccount"><u>新規アカウント作成はこちら</u></string>
+    <string name="toHome"><u> アカウント登録をしない</u></string>
+
+
+    <!--説明画面-->
+    <string name="title1">6種類の占いコンテンツの用意</string>
+    <string name="message1">本アプリでは6種類の豊富なコンテンツを用意しております。ぜひお試しください。</string>
+    <string name="title2">本人占い</string>
+    <string name="message2">自分の生年月日を入力し、ソウルナンバーを算出します。ソウルナンバーとは運命数と呼ばれ、ソウルナンバーによって特徴が異なります。</string>
+    <string name="title3">相性占い</string>
+    <string name="message3">自分と相手の生年月日を入力し、お互いのソウルナンバーを算出します。2人のソウルナンバーから相性を算出します。</string>
+    <string name="title4">星座占い</string>
+    <string name="message4">自分の誕生日を入力し、今日と明日の運勢を占います。占い結果は占い鑑定士によるものです。ぜひお試しください。</string>
+    <string name="title5">おみくじ</string>
+    <string name="message5">ルーレットを回し、今日の運勢を占います。大吉、中吉、小吉、末吉、凶、大凶の6つを用意しております。</string>
+    <string name="title6">タロット占い</string>
+    <string name="message6">タロットカードを引き、あなたの性格を占います。現在、作成中のため、コンテンツの提供までしばしお待ちください。</string>
+    <string name="title7">リンク集</string>
+    <string name="message7">占いにAPIに関する参考ページです。もし自分で占いコンテンツを作成したい場合は、ご覧ください。</string>
+    <string name="title8">隠しコマンド</string>
+    <string name="message8">タロット占いのページで、～をするとイベントが発生します。ぜひお試しください。</string>
+
+    <!--ホーム画面-->
+    <!--項目-->
+    <string name="button1">本人占い</string>
+    <string name="button2">相性占い</string>
+    <string name="button3">星座占い</string>
+    <string name="button4">おみくじ</string>
+    <string name="button5">タロット占い</string>
+    <string name="button6">リンク集</string>
+    <string name="button7">シェア</string>
+    <string name="button8">マニュアル</string>
+    <string name="button9">その他</string>
+
+    <string name="comment1">生年月日からソウルナンバーを算出し、あなたの性格を占います。</string>
+    <string name="comment2">２人のソウルナンバーを算出し、２人の相性を占います。</string>
+    <string name="comment3">生年月日から星座を算出し、本日と明日の運勢を占います。</string>
+    <string name="comment4">ルーレットを回し、本日の運勢を占います。</string>
+    <string name="comment5">TO BE CONTINUED</string>
+    <string name="comment6">占いに関するリンク集です。</string>
+    <string name="comment7">Fortune AppをSNSで共有します。</string>
+    <string name="comment8">FortuneAppのマニュアルです。</string>
+    <string name="comment9">その他、サインアウト、アカウント削除などを行います。</string>
+
+    <string name="shareTitle">Fortune Appをお試しください</string>
+    <string name="shareMessage">松浦裕久君が作成したFortuneAppアプリをぜひお試しください。\nhttps://play.google.com/store/apps/details?id=jp.matsuura.fortuneapp</string>
+
+
+    <!--A-->
+    <!--タイトル-->
+    <string name="Atitle">あなたの性格を占います</string>
+    <string name="A02title">あなたの性格を占いました</string>
+    <string name="character1">才能も運もあるが、\nハートが弱く小心者</string>
+    <string name="character2">頭がよく直感が働くが、\n短気で人からあれこれいわれたくない</string>
+    <string name="character3">面倒見がよく、\n芸術センスがあるが、\nストレスを溜めやすい</string>
+    <string name="character4">働き者でリーダーシップがあるが、\nクールで人間味がない</string>
+    <string name="character5">マイペースで安定志向だが、\n恋愛下手</string>
+    <string name="character6">八方美人で愛情深いが、\n恋愛下手</string>
+    <string name="character7">お調子者でパワフルだが、\nデリケートで傷つきやすい</string>
+    <string name="character8">こだわりが強く金運もあるが、\nものの考え方が極端</string>
+    <string name="character9">記憶力がよく天才肌だが、\n寂しがり屋で１番浮気しやすい</string>
+
+    <string name="detailcharacter1">人を元気づける才能がある。\n頭の回転が速い。\n運が強いので、いざとなったら助けられる。\n調子がいいところがある。\nわがままになりやすい。</string>
+    <string name="detailcharacter2">マイペースで人にああしろ、こうしろと言われることが嫌い。\n頭が良くて、せっかち。\n水の近くにいると精神的に安心する。\n金運がない。\n利益があるモノとないモノを判断するのが速い。</string>
+    <string name="detailcharacter3">圧倒的にお母さんの影響を受けている。\n優しくて面倒見がよい。\n人を傷つけるのも傷つけられるのも嫌い。\n一番になりたくない。2番手が好き\nアート的なセンスがある人が多い。</string>
+    <string name="detailcharacter4">働き者。失敗しても立ち直りが早い。\n意志が強い、男っぽい。\n男性に対しては理想が高い。\n仕事がうまくいかないと暴力的になる可能性がある。\n自分より仕事ができない人を見下す。</string>
+    <string name="detailcharacter5">家族の絆を大切にする。\n安定することを好む。\nマイペースでのんびりしている。</string>
+    <string name="detailcharacter6">落ち着きがない。安定を嫌う。\n飽きっぽい。新しいことに興味がある。\n見かけよりも気を遣ったり神経質なところもある。\nあれこれ何でもしゃべりたがる。\n人間関係で自分の運勢が伸びていく。</string>
+    <string name="detailcharacter7">家庭的で家族を大切にする。\n車に関してマニアックな人が多い。\n不思議なインスピレーションがある。\n見かけよりもデリケートで傷つきやすい。\n地に足つけてね。夢だけは追わないように。</string>
+    <string name="detailcharacter8">自然体が好き。自然が好き。（町の中はゴミゴミしていて嫌い。）\n物の考え方が極端。\n経済観念がありそうで、ない。\n純粋だが、ちょっと変わり者。\n怠け始めたら怠け癖がつく。\n信頼されるとスゴクつくすが、無視されると極端に豹変する。</string>
+    <string name="detailcharacter9">寂しがり屋のくせに、一人でいることが好き。\n複雑な性格なところがある。\n人に背を向ける割に自分が中心にならないとすねる。\nたくさんの友人より数少ない友人に恵まれるので困った時に助けられる。\n論理的で頭がいい。記憶力が優れている。</string>
+
+
+    <!--芸能人-->
+    <string name="person1">大野智\n櫻井翔\n和田アキ子\n浜崎あゆみ\n明石家さんま\nマツコ・デラックス</string>
+    <string name="person2">相葉雅紀\n村上信五\n今田耕司\n武田鉄矢\n所ジョージ\n古館伊知郎</string>
+    <string name="person3">阿部寛\n有吉弘行\n天海祐希\nアントニオ猪木\n宮沢りえ\n郷ひろみ</string>
+    <string name="person4">ビートたけし\n稲垣吾郎\nタモリ\n松田聖子\nビル・ゲイツ\n桑田佳祐</string>
+    <string name="person5">宇多田ヒカル\n杉本彩\n孫正義\n国分太一\n松本潤\n三谷幸喜</string>
+    <string name="person6">深田恭子\n黒柳徹子\n横山裕\n中島みゆき</string>
+    <string name="person7">イチロー\n広末涼子\n松嶋菜々子\n木村拓哉\n小室哲哉\</string>
+    <string name="person8">安室奈美恵\n二宮和也\n薬師丸ひろ子\n野村克也\n加山雄三</string>
+    <string name="person9">沢尻エリカ\n菅野美穂\n松本人志\n千原ジュニア\n岡村隆史\n中居正広\n錦戸亮</string>
+
+    <string name="link"><u>他のソウルナンバーの詳細はこちら</u></string>
+
+
+    <!--C-->
+    <!--プルダウンリスト-->
+    <string-array name="list">
+        <item>1月</item>
+        <item>2月</item>
+        <item>3月</item>
+        <item>4月</item>
+        <item>5月</item>
+        <item>6月</item>
+        <item>7月</item>
+        <item>8月</item>
+        <item>9月</item>
+        <item>10月</item>
+        <item>11月</item>
+        <item>12月</item>
+        <item>1月</item>
+        <item>2月</item>
+        <item>3月</item>
+        <item>4月</item>
+        <item>5月</item>
+        <item>6月</item>
+        <item>7月</item>
+        <item>8月</item>
+        <item>9月</item>
+        <item>10月</item>
+        <item>11月</item>
+        <item>12月</item>
+    </string-array>
+
+    <string name="Ctitle">あなたの今日の運勢を占います</string>
+    <string name="Csubtitle">生年月日を入力してください</string>
+    <string name="errorC">生年月日の入力に間違いがあります</string>
+
+    <string name="C02title">あなたの今日の運勢を占いました</string>
+
+    <!--E-->
+    <string name="url1"><u>https://jugem.jp/</u></string>
+    <string name="url2"><u>http://www.tarim.co.jp/</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

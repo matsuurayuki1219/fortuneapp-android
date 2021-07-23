@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/baseColor"
+    android:paddingLeft="@dimen/padding"
+    android:paddingBottom="@dimen/bottomMargin"
+    android:paddingRight="@dimen/padding"
+    tools:context=".D.AppD01Activity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <jp.matsuura.fortuneapp.MyCustomView.MyRouletteView
+            android:id="@+id/roulette"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="画面をタッチしてください"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/textMargin"
+            android:textSize="@dimen/titleSize" />
+
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buttonHeight"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/buttonMargin"
+            android:layout_marginTop="@dimen/contentMargin"
+            android:layout_marginRight="@dimen/buttonMargin"
+            android:background="@drawable/button_rounded_subcolor"
+            android:gravity="center|center_horizontal"
+            android:text="ホーム画面に戻る"
+            android:textColor="@color/white"
+            android:textSize="@dimen/buttonSize" />
+
+
+
+    </FrameLayout>
+
+</LinearLayout>
